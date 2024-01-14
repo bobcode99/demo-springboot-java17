@@ -38,4 +38,36 @@ public class Reservation {
                 ", reservationDate=" + reservationDate +
                 '}';
     }
+
+    public long getReservationId() {
+        return reservationId;
+    }
+
+    public void setReservationId(long reservationId) {
+        this.reservationId = reservationId;
+    }
+
+    public long getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(long roomId) {
+        this.roomId = roomId;
+    }
+
+    public long getGuestId() {
+        return guestId;
+    }
+
+    public void setGuestId(long guestId) {
+        this.guestId = guestId;
+    }
+
+    public Date getReservationDate() {
+        return reservationDate;
+    }
+
+    public void setReservationDate(Date reservationDate) {
+        this.reservationDate = reservationDate;
+    }
 }

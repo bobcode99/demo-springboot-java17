@@ -5,15 +5,6 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "GUEST")
 public class Guest {
-//
-//    GUEST_ID BIGSERIAL PRIMARY KEY,
-//    FIRST_NAME VARCHAR(64),
-//    LAST_NAME VARCHAR(64),
-//    EMAIL_ADDRESS VARCHAR(64),
-//    ADDRESS VARCHAR(64),
-//    COUNTRY VARCHAR(32),
-//    STATE VARCHAR(12),
-//    PHONE_NUMBER VARCHAR(24)
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "GUEST_ID")
@@ -39,6 +30,7 @@ public class Guest {
 
     @Column(name = "PHONE_NUMBER", length = 24)
     private String phoneNumber;
+
 
     public long getId() {
         return id;
